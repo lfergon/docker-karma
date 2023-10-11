@@ -61,16 +61,16 @@ ENV CHROME_BIN=/usr/bin/google-chrome
 ENV CHROME_PATH=/usr/lib/chromium/
 
 # Copy package.json and package-lock.json (if available)
-COPY package*.json ./
+# COPY package*.json ./
 
 # Install Node.js dependencies
-RUN npm install
+# RUN npm install
 
 # Copy the rest of the application source code
-COPY . .
+# COPY . .
 
 # Expose port 9876 for Karma
-EXPOSE 9876
+# EXPOSE 9876
 
 # Command to run tests
-CMD ["npm", "test"]
+# CMD ["npm", "test"]
